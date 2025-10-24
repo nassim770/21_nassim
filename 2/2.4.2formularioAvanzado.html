@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario avanzado de superheroes</title>
+</head>
+
+<body>
+    <h1>Formulario de Superheroes</h1>
+
+    <form action="mailto:nassim.saban@educa.madrid.org" method="post" enctype="text/plain">
+
+
+        <fieldset>
+            <legend>Personaje</legend>
+
+            <label for="superheroe">Superheroe favorito</label>
+            <select name="superheroe" id="superheroe">
+                <option value="">Elige superheroe</option>
+                <option value="iron_man">Iron Man</option>
+                <option value="thor">Thor</option>
+                <option value="capitan_america">Capitan America</option>
+                <option value="viuda_negra">Viuda Negra</option>
+            </select>
+
+            <br><br>
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido" required>
+
+            <br><br>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Formato: 999999999" required>
+
+            <br><br>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+
+            <br><br>
+
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <p>Selecciona forma de contacto preferida:</p>
+            <label><input type="radio" name="contacto" value="email" checked> Email</label>
+            <label><input type="radio" name="contacto" value="telefono"> Telefono</label>
+            <label><input type="radio" name="contacto" value="carta"> Carta</label>
+
+            <br><br>
+
+            <p>Elige tus asignaturas favoritas:</p>
+            <label><input type="checkbox" name="asignatura" value="aplicaciones_web"> Aplicaciones web</label>
+            <label><input type="checkbox" name="asignatura" value="seguridad_informatica"> Seguridad informatica</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Campos adicionales</legend>
+
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" id="email" placeholder="tucorreo@educa.madrid.org">
+            <br><br>
+
+            <label for="appointment">Elige una hora para la reunion:</label>
+            <input type="time" id="appointment" name="appointment" min="09:00" max="18:00" required />
+            <small>Horario de oficina es de 9:00 a 18:00</small>
+            <br><br>
+
+            <label for="rango">Nivel de satisfacción (0-10):</label>
+            <input type="range" name="rango" id="rango" min="0" max="10">
+            <br><br>
+
+            <label for="archivo">Sube tu imagen de superhéroe:</label>
+            <input type="file" name="archivo" id="archivo" accept="image/*">
+            <br><br>
+
+            <label for="url">Página web favorita:</label>
+            <input type="url" name="url" id="url" placeholder="https://...">
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+
+    </form>
+</body>
+
+</html>
