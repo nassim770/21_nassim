@@ -15,21 +15,21 @@
         <fieldset>
             <legend>Personaje</legend>
 
-            <label for="superheroe">Superheroe favorito</label>
-            <select name="superheroe" id="superheroe">
-                <option value="">Elige superheroe</option>
-                <option value="iron_man">Iron Man</option>
-                <option value="thor">Thor</option>
-                <option value="capitan_america">Capitan America</option>
-                <option value="viuda_negra">Viuda Negra</option>
-            </select>
+            <label for="superheroe">Superhéroe favorito</label>
+            <input list="superheroes" name="superheroe" id="superheroe" placeholder="Elige superhéroe">
+            <datalist id="superheroes">
+                <option value="Iron Man">
+                <option value="Thor">
+                <option value="Capitán América">
+                <option value="Viuda Negra">
+            </datalist>
 
             <br><br>
 
             <label for="color">Color</label>
             <input type="color" name="color" id="color">
-
         </fieldset>
+
 
 
         <fieldset>
