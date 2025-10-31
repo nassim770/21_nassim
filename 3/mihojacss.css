@@ -1,0 +1,30 @@
+h1 {
+    color: #40E0D0;
+}
+
+h2 {
+    color: #800080;
+}
+
+h3 {
+    color: #800080;
+    font-style: italic;
+}
+
+code {
+    color: blue;
+    font-weight: bold;
+}
+
+.codigo {
+    color: green;
+}
+
+#mayusculas {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.negrita {
+    font-weight: bold;
+}
