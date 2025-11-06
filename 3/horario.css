@@ -1,0 +1,98 @@
+table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            background-color: #3b0058;
+            color: white;
+            font-size: 1.5em;
+            border-radius: 10px 10px 0 0;
+            padding: 8px;
+        }
+
+        thead th {
+            background-color: #8fd3f4;
+            color: #002244;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 6px;
+        }
+
+        tbody th {
+            background-color: #001f4d;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+            width: 10%;
+            margin: 2%;
+            padding: 2%;
+            border: 5px outset #ccc;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        td a {
+            visibility: hidden;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 4px 8px;
+            border-radius: 5px;
+            text-decoration: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        td:hover a {
+            visibility: visible;
+        }
+
+        td:hover {
+            filter: brightness(1.1);
+        }
+
+        
+        .recreo td {
+            background-color: #f5f59c;
+            font-weight: bold;
+        }
+
+        .recreo:hover td {
+            background-color: #e2e27c;
+        }
+
+        .web {
+            background-color: #a4d1ff;
+        }
+
+        .seguridad {
+            background-color: #ff9f9f;
+        }
+
+        .sor {
+            background-color: #ffffff;
+        }
+
+        .sred {
+            background-color: #fff2a8;
+        }
+
+        .sost {
+            background-color: #b8f5d0;
+        }
+
+        thead>tr:first-child>th:first-child {
+            background-color: white !important;
+            border: none;
+        }
