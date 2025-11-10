@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: purple;
+    padding: 5px;
+}
+
+.caja {
+    background-color: orange;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.container2 .caja {
+    border: 3px solid black;
+    margin: 0;
+}
+
+
+#nav {
+    background-color: beige;
+    margin-top: 20px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    background-color: rgb(68, 2, 2);
+    padding: 10px 15px;
+    border: 5px solid rgb(31, 29, 29);
+}
+
+#nav ul li:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
