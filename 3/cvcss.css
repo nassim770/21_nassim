@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f5f7;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Header */
+.header-bg {
+    background-color: rgba(100, 130, 140, 0.3);
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80'); /* Imagen de fondo sutil */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Overlay oscura para que el texto se vea bien */
+.header-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.header-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img {
+    position: relative;
+    z-index: 10;
+}
+
+/* Título y párrafo */
+.header-bg h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.4rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+}
+
+.header-bg p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+}
+
+/* Sección de formación académica */
+main {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education h2 {
+    color: #2d7a7a;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2d7a7a;
+    padding-bottom: 6px;
+}
+
+.study {
+    margin-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #222;
+}
+
+.study strong {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.study p {
+    white-space: pre-line; /* para respetar saltos de línea */
+}
