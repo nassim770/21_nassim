@@ -1,0 +1,59 @@
+.html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "header header header header"
+        "main main . aside"
+        "footer footer footer footer";
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+    gap: 0; 
+    padding: 0; 
+}
+
+header {
+    grid-area: header;
+    background-color: #0077b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
