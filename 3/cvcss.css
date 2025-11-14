@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,21 +13,19 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header-bg {
     background-color: rgba(100, 130, 140, 0.3);
     padding: 40px 20px 60px 20px;
     text-align: center;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80'); /* Imagen de fondo sutil */
+    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     position: relative;
 }
 
-/* Overlay oscura para que el texto se vea bien */
 .header-bg::before {
     content: "";
     position: absolute;
@@ -37,7 +35,7 @@ body {
     z-index: 0;
 }
 
-.header-bg > * {
+.header-bg>* {
     position: relative;
     z-index: 1;
 }
@@ -45,25 +43,26 @@ body {
 .profile-img {
     position: relative;
     z-index: 10;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
 }
 
-/* Título y párrafo */
 .header-bg h1 {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 2.4rem;
     letter-spacing: 0.15em;
     margin-bottom: 10px;
 }
 
 .header-bg p {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
     letter-spacing: 0.05em;
 }
 
-/* Sección de formación académica */
 main {
     margin-top: 40px;
     max-width: 700px;
@@ -71,29 +70,135 @@ main {
     margin-right: auto;
 }
 
-.education h2 {
-    color: #2d7a7a;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #2d7a7a;
-    padding-bottom: 6px;
+section.education {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.study {
-    margin-bottom: 25px;
+section.education h2 {
+    color: #2d7a7a;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #2d7a7a;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+section.education .study {
+    margin-bottom: 18px;
     font-size: 1rem;
     color: #222;
 }
 
-.study strong {
+section.education .study strong {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: 700;
+    color: #1f4f4f;
 }
 
-.study p {
-    white-space: pre-line; /* para respetar saltos de línea */
+section.education .study p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+section#skills,
+section#experience {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section#skills h3,
+section#experience h3 {
+    color: #2d7a7a;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #2d7a7a;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.knowledge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.knowledge>div {
+    flex: 1 1 200px;
+}
+
+.knowledge h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1f4f4f;
+}
+
+.knowledge ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.knowledge ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 22px;
+}
+
+.knowledge ul li::before {
+    content: '✔';
+    color: #2d7a7a;
+    position: absolute;
+    left: 0;
+}
+
+#skills ul li:nth-child(n+4)::before {
+    content: '►';
+    color: #ff7f50;
+}
+
+.languages ul li::before {
+    content: '';
+    padding-left: 0;
+}
+
+section#experience article {
+    margin-bottom: 18px;
+}
+
+section#experience h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f4f4f;
+    margin-bottom: 6px;
+}
+
+section#experience p {
+    font-size: 1rem;
+    color: #222;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2d7a7a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
